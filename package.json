@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "mocha": "^6.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   },
   "dependencies": {
     "lodash": "^4.17.15"
