@@ -1,25 +1,30 @@
 {
   "name": "@fastcampus/your-project-name",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "your project description",
   "author": "your-name <your@email>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./lib",
+    "lint": "tsc --noEmit && eslint ./dist",
     "test": "mocha --exit test/**.spec.js",
-    "coverage": "nyc npm test"
+    "coverage": "nyc npm test",
+    "build": "tsc"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
+    "@types/node": "^12.12.21",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "chai": "^4.2.0",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.2"
   }
 }
