@@ -1,11 +1,21 @@
+> This is a starter project for mixed javascript/typescript [nodejs] module.
+>
+> Features:
+> - Mixed javascript and [typescript].
+> - Lint with [eslint], [prettier] and [typescript-eslint].
+> - Test with [jest] and [ts-jest].
+
 your-project-name
 =================
 
 your-project-description
 
+
 ## getting started
 
 ### lint
+
+Run [eslint] for all js/ts in `src/` and `test/`.
 
 ```console
 $ npm run lint
@@ -13,9 +23,35 @@ $ npm run lint
 
 ### test
 
+Run [jest] for all js/ts in `test/`.
+
 ```console
 $ npm run test
 ```
 
-may the **SOURCE** be with you...
+### build
 
+Compile with [tsc] for all js/ts in `src/` into `dist/`.
+
+```console
+$ npm run build
+```
+
+### watch
+
+Watch with [tsc] for all js/ts in `src/` directory into `dist/`.
+
+```console
+$ npm run watch
+```
+
+May the **SOURCE** be with you...
+
+[eslint]:https://eslint.org/
+[jest]:https://jestjs.io/
+[nodejs]:https://nodejs.org/
+[prettier]:https://prettier.io/
+[ts-jest]:https://kulshekhar.github.io/ts-jest/
+[tsc]:https://www.typescriptlang.org/
+[typescript-eslint]:https://github.com/typescript-eslint/typescript-eslint
+[typescript]:https://www.typescriptlang.org/
