@@ -1,1 +1,1 @@
-export function greetings(name: any): string;
+export function greetings(name: string): string;

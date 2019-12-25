@@ -4,6 +4,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
+    "checkJs": true,
+    "newLine": "lf",
     "declaration": true,
     "target": "es6",
     "noImplicitAny": true,
