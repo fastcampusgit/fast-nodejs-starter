@@ -6,8 +6,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js --ext .ts ./src ./test",
-    "test": "jest --forceExit --coverage --verbose",
+    "lint": "eslint --ext .js --ext .ts ./src",
+    "test": "jest --forceExit --coverage --verbose ./src",
     "build": "tsc",
     "watch": "tsc -w"
   },
