@@ -1,4 +1,4 @@
-const { greetings } = require('../dist/hi');
+const { greetings } = require('./hi');
 
 describe('hi', () => {
   describe('greetings', () => {
