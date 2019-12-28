@@ -1,6 +1,6 @@
 {
   "name": "@fastcampus/your-project-name",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "your project description",
   "author": "your-name <your@email>",
   "license": "MIT",
@@ -12,12 +12,12 @@
     "watch": "tsc -w"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.24",
-    "@types/node": "^13.1.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.1",
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
