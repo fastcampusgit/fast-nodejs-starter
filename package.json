@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "prepare": "npm run build",
     "lint": "eslint --ext .js --ext .ts ./src",
     "test": "jest --forceExit --coverage --verbose ./src",
     "build": "tsc",
