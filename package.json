@@ -6,12 +6,18 @@
   "repository": "https://github.com/fastcampusgit/fast-node-starter",
   "author": "your-name <your@email>",
   "license": "MIT",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
+  "exports": {
+    "./": "./dist/"
+  },
   "scripts": {
+    "lint": "eslint --ext .js --ext .ts ./src",
     "prepublishOnly": "npm run build",
     "prebuild": "eslint --ext .js --ext .ts ./src",
     "build": "tsc",
+    "testx": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --coverage --verbose ./src",
     "test": "jest --forceExit --coverage --verbose ./src",
     "start": "tsc -w"
   },
