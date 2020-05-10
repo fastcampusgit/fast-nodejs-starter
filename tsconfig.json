@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "es2015",
+    "target": "es2020",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "checkJs": true,
     "newLine": "lf",
     "declaration": true,
-    "target": "es6",
     "noImplicitAny": false,
     "moduleResolution": "node",
     "sourceMap": true,
