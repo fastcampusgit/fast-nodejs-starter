@@ -10,7 +10,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "exports": {
-    "./": "./dist/"
+    "./hello": "./dist/hello.js",
+    "./hi": "./dist/hi.js"
   },
   "scripts": {
     "lint": "eslint --ext .js --ext .ts ./src",
