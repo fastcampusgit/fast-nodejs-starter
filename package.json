@@ -1,12 +1,13 @@
 {
   "name": "@fastcampus/your-project-name",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "your project description",
   "author": "your-name <your@email>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
-    "prepare": "npm run build",
+    "prepublish": "npm run build",
     "lint": "eslint --ext .js --ext .ts ./src",
     "test": "jest --forceExit --coverage --verbose ./src",
     "build": "tsc",
