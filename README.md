@@ -10,16 +10,7 @@ your-project-name
 
 your-project-description
 
-
 ## getting started
-
-### lint
-
-Run [eslint] for all js/ts in `src/` and `test/`.
-
-```console
-$ npm run lint
-```
 
 ### test
 
@@ -37,12 +28,12 @@ Compile with [tsc] for all js/ts in `src/` into `dist/`.
 $ npm run build
 ```
 
-### watch
+### watch(continuous build)
 
 Watch with [tsc] for all js/ts in `src/` directory into `dist/`.
 
 ```console
-$ npm run watch
+$ npm start
 ```
 
 May the **SOURCE** be with you...
