@@ -12,17 +12,6 @@ your-project-description
 
 ## getting started
 
-<<<<<<< HEAD
-=======
-### lint
-
-Run [eslint] for all js/ts in `src/`.
-
-```console
-$ npm run lint
-```
-
->>>>>>> 6ce1df6 (add nodejs native esm support)
 ### test
 
 Run [jest] for all .spec.js/.spec.ts in `src/`.
