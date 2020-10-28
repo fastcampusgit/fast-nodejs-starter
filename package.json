@@ -6,27 +6,32 @@
   "repository": "https://github.com/fastcampusgit/fast-node-starter",
   "author": "your-name <your@email>",
   "license": "MIT",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
+  "exports": {
+    "./hello": "./dist/hello.js",
+    "./hi": "./dist/hi.js"
+  },
   "scripts": {
     "prepublishOnly": "npm run build",
     "prebuild": "eslint --ext .js --ext .ts ./src",
     "build": "tsc",
-    "test": "jest --forceExit --coverage --verbose ./src",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --coverage --verbose ./src",
     "start": "tsc -w"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.14",
-    "@types/node": "^14.11.8",
-    "@typescript-eslint/eslint-plugin": "^4.4.1",
-    "@typescript-eslint/parser": "^4.4.1",
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^6.12.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "jest": "^26.5.3",
+    "jest": "^26.6.1",
     "prettier": "^2.1.2",
-    "ts-jest": "^26.4.1",
-    "typescript": "^4.0.3"
+    "ts-jest": "^26.4.3",
+    "typescript": "^4.0.5"
   },
   "dependencies": {}
 }

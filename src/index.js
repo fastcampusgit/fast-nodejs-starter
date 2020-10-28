@@ -1,4 +1,2 @@
-module.exports = {
-  hello: require('./hello'),
-  hi: require('./hi'),
-};
+export { greetings as hello } from './hello';
+export { greetings as hi } from './hi';

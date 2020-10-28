@@ -1,4 +1,4 @@
-const { greetings } = require('./hi');
+import { greetings } from './hi';
 
 describe('hi', () => {
   describe('greetings', () => {
