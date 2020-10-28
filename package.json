@@ -14,14 +14,12 @@
     "./hi": "./dist/hi.js"
   },
   "scripts": {
-    "lint": "eslint --ext .js --ext .ts ./src",
     "prepublishOnly": "npm run build",
     "prebuild": "npm run lint",
     "pretest": "npm run lint",
     "lint": "eslint --ext .js --ext .ts ./src",
     "build": "tsc",
-    "testx": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --coverage --verbose ./src",
-    "test": "jest --forceExit --coverage --verbose ./src",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --forceExit --coverage --verbose ./src",
     "ci:test": "npm run test",
     "start": "tsc -w"
   },

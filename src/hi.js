@@ -2,4 +2,4 @@
  * @param {string} name
  * @returns {string}
  */
-module.exports.greetings = (name) => `hi,${name}!`;
+export const greetings = (name) => `hi,${name}!`;
