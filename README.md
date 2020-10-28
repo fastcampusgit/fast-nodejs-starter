@@ -12,6 +12,35 @@ your-project-description
 
 ## getting started
 
+
+> NOTE: this module provides **esm** only!
+
+### within es modules(esm):
+
+ex. `foo.mjs` or `foo.js` with `"type": "module"` in `package.json`
+
+```js
+import { greetings as sayHi } from '@fastcampus/your-project-name/hi';
+import { greetings as sayHello } from '@fastcampus/your-project-name/hello';
+
+console.log(sayHi('here'));
+console.log(sayHello('there'));
+```
+
+### within commonjs modules:
+
+ex. `foo.cjs` or `foo.js` without `"type": "module"` in `package.json`
+
+```js
+(async () => {
+  const { greetings: sayHi } = await import("@fastcampus/your-project-name/hi");
+  const { greetings: sayHello } = await import("@fastcampus/your-project-name/hello");
+
+  console.log(sayHi("here"));
+  console.log(sayHello("there"));
+})();
+```
+
 ### test
 
 Run [jest] for all .spec.js/.spec.ts in `src/`.
